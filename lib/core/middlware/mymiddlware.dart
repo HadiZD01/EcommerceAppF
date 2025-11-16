@@ -1,4 +1,3 @@
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:untitled/core/constant/routes.dart';
@@ -10,7 +9,7 @@ class Mymiddlware extends GetMiddleware {
   MyService myservice = Get.find();
 
   @override
-  RouteSettings? redirect(String? route) {
+  RouteSettings?  redirect(String? route) {
     if (myservice.sharedPreferences.getString(('seeit')) == '1') {
       print(myservice.sharedPreferences.getString('seeit'));
       return RouteSettings(name: AppRoutes.login);

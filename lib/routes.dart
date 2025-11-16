@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:untitled/core/constant/routes.dart';
 import 'package:untitled/core/middlware/mymiddlware.dart';

@@ -7,7 +7,7 @@ class TestData {
   TestData(this.crud);
 
   Future getdata() async {
-    var response = await crud.postdata(ApiUrl.server, {});
+    var response = await crud.postdata(ApiUrl.register, {});
     response.fold((l) => l, (r) => r);
   }
 }

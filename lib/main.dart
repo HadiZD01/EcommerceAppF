@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:untitled/bindings/initialbindings.dart';
 import 'package:untitled/core/constant/color.dart';
 import 'package:untitled/core/localization/changelocallang.dart';
 import 'package:untitled/core/services/services.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: Onboarding(),
       home: Language(),
+      initialBinding: Initialbindings(),
       title: 'Flutter Demo',
       locale: controller.language,
       theme: ThemeData(
